@@ -5,7 +5,7 @@ const stripe = new Stripe("sk_test_51PaEauRv1UPuPsrx6Ie7FrBuzCGVim5TkNUA9t3TynRs
 
 //placing user order from frontend
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:3000";
+  const frontend_url = "https://marketloom.netlify.app";
   try {
     const newOrder = new orderModel({
       userId: req.body.userId,
